@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".patient.PatientProfile">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:textColor="@color/blue_700"
+        android:id="@+id/pt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="username"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/pt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/pt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/pt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/pt_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/pt_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Gender"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:onClick="pt_update"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Update"
+        android:textSize="22dp" />
+
+</LinearLayout>

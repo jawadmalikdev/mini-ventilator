@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30sp"
+    android:visibility="visible"
+    tools:context=".doctor.Doctorlogin">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progress_bardoc"
+        />
+
+    <ImageView
+        android:layout_width="139dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:padding="14dp"
+        app:srcCompat="@drawable/customimage"
+        app:tint="@color/blue_500" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/dr_userin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/dr_passin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/dr_login"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:text="Login"
+            android:textSize="22dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:textColorHint="@color/blue_500">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginTop="-20dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+
+            android:hint="Don't have an account?"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/gotosignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="-45dp"
+            android:layout_marginRight="10dp"
+            android:width="80dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="SignUp"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/teal_200"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

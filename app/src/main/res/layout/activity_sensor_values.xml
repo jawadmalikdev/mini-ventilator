@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#F4F9FC"
+    tools:context=".SensorValues">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imageview1"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="56dp"
+                        app:tint="@color/blue_500"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/ic_temprature"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/text"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/imageview1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Temprature"
+                        android:textColor="@color/blue_500"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/temp_sensor"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/text"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="35"
+                        android:inputType="number"
+                        android:textColor="@color/blue_500"
+                        android:textSize="29sp" />
+
+                    <Button
+                        android:id="@+id/buttontemprature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00FF3333"
+                        app:iconTint="#2196F3" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imageview2"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="56dp"
+                        app:tint="@color/blue_500"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/ic_temprature"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/text2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/imageview2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Fahrenheit"
+                        android:textColor="@color/blue_500"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/heart_sensor"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/text2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="75"
+                        android:textColor="@color/blue_500"
+                        android:textSize="29sp" />
+
+                    <Button
+                        android:id="@+id/buttonheart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00FF3333"
+                        app:iconTint="#2196F3" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imageview3"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="56dp"
+                        app:tint="@color/blue_500"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/ic_bloodoxygen"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/text3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/imageview3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Heart Rate"
+                        android:textColor="@color/blue_500"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/temp_blood_oxygen"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/text3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="220"
+                        android:textColor="@color/blue_500"
+                        android:textSize="29sp" />
+
+                    <Button
+                        android:id="@+id/buttonbloodoxygen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00FF3333"
+                        app:iconTint="#2196F3" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imageview4"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="56dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/oxygen"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/text4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/imageview4"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="blood oxygen"
+                        android:textColor="@color/blue_500"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/pressure_sensor"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/text4"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="120.05"
+                        android:textColor="@color/blue_500"
+                        android:textSize="29sp" />
+
+                    <Button
+                        android:id="@+id/buttonoxygenpressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00FF3333"
+                        app:backgroundTint="#2196F3"
+                        app:iconTint="#E91E63"
+                        app:strokeColor="#FFFFFF" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

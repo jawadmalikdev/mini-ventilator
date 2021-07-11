@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:tint="@color/blue_500"
+        android:src="@drawable/customimage"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Mini Ventilator"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue_700"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:onClick="login_patient"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Login as patient"
+        android:textSize="18sp"
+        android:padding="5dp"
+       />
+
+    <Button
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:onClick="login_doctor"
+        android:padding="5dp"
+        android:text="Login as doctor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:onClick="signup_patient"
+        android:backgroundTint="#EEEEEE"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Signup as patient"
+        android:textColor="@color/blue_500"
+        android:textSize="18sp"
+        android:padding="5dp"/>
+    <Button
+        android:onClick="signup_doctor"
+        android:backgroundTint="#EEEEEE"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Signup as doctor"
+        android:textColor="@color/blue_500"
+        android:textSize="18sp"
+        android:padding="5dp"/>
+
+</LinearLayout>

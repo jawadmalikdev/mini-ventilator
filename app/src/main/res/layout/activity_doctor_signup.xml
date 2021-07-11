@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30sp"
+    android:visibility="visible"
+    tools:context=".doctor.DoctorSignup">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:src="@drawable/customimage" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/dr_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/dr_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/dr_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/dr_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/dr_reg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:textSize="22dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:textColorHint="@color/blue_500">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginTop="-20dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+
+            android:hint="Already have an account?"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gotosignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="-45dp"
+            android:layout_marginRight="10dp"
+            android:width="80dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Login"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/teal_200"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

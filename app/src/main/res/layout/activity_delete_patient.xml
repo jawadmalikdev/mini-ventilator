@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".doctor.DeletePatient">
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:layout_marginTop="30dp"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/blue_500">
+
+            <EditText
+                android:id="@+id/ptusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="Enter Username"
+                android:inputType="text"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="check"
+            />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="35dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/patientname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:editable="false"
+            android:ems="10"
+            android:hint="Name"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/patientemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:editable="false"
+            android:ems="10"
+            android:hint="Email"
+
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/blue_500">
+
+        <EditText
+            android:id="@+id/patientgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Gender"
+            android:editable="false"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:onClick="deletept"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
